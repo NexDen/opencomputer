@@ -3,7 +3,7 @@ r.activate()
 maxHeat = r.getMaxHeatLevel()
 while true do
   local heat = r.getHeatLevel()
-  if heat > 1000 then
+  if heat > 100000 then
     print("SCRAM! SCRAM! SCRAM!")
     r.deactivate()
     break
