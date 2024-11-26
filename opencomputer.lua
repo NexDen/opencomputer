@@ -4,7 +4,7 @@ maxHeat = r.getMaxHeatLevel()
 is_overheated = false
 while true do
   local heat = r.getHeatLevel()
-  if heat > (maxHeat - 100000) then
+  if heat > maxHeat - 100000 then
     print("SCRAM! SCRAM! SCRAM!")
     r.deactivate()
     is_overheated = true
